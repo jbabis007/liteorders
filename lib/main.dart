@@ -7,6 +7,7 @@ import 'package:liteorders/forms/authent_form.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:liteorders/classes/globals.dart' as  globals ;
+import 'package:package_info_plus/package_info_plus.dart';
 
 
 
@@ -17,7 +18,10 @@ Future<void> main() async {
   try {
     DeviceInfoPlugin deviceInfo = DeviceInfoPlugin();
     AndroidDeviceInfo androidInfo = await deviceInfo.androidInfo;
-    globals.FINGERPRINT = androidInfo.fingerprint.toString();
+    PackageInfo packageInfo = await PackageInfo.fromPlatform();
+    //globals.FINGERPRINT = androidInfo.fingerprint.toString();
+    globals.FINGERPRINT = androidInfo.androidId.toString();
+    globals.APPLIVERSION = packageInfo.version;
     } on Exception catch (e) {
     //print(' ERRRRRRORRRRR ===  ${e.toString()}');
 

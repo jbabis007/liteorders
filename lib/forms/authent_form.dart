@@ -112,7 +112,7 @@ class _AuthentificateFormState extends State<AuthentificateForm> {
                       "Connexion",
                       style: TextStyle(fontSize: 25),
                     )))
-          ],
+         ,Container(height: 50), Text(globals.APPLIVERSION, style: TextStyle(color: Colors.green),) ],
         ),
       ),
     );

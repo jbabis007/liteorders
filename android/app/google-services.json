@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "71821714899",
+    "project_id": "liteorder-abc44",
+    "storage_bucket": "liteorder-abc44.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:71821714899:android:841f0886a41f15c0e6bb26",
+        "android_client_info": {
+          "package_name": "Abis.liteorders"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "71821714899-fsee7p5g9h5071qfeg7fori30b60hbk5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPeqMmWSEWDULmAzor1hKAlqCQhpdDO6s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "71821714899-fsee7p5g9h5071qfeg7fori30b60hbk5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
